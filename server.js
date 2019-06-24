@@ -1,9 +1,8 @@
-var express = require('express');
-const path = require("path");
-var app = express();
+const express = require('express');
+const app = express();
 
 app.get('/', (req,res) => {
-    res.sendFile('/index.html');
+    res.send("hello world");
 })
 
 app.listen(process.env.PORT || 3000, () => {
